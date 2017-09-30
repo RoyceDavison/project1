@@ -21,23 +21,41 @@
         <nav>
           <ul class="nav nav-pills float-right">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link active" href="#" >Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Log in</a>
+              <a class="nav-link" data-toggle="modal" data-target="#login-modal"   href="#">Log in</a>
+
+              <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	           <div class="modal-dialog">
+				               <div class="loginmodal-container">
+					                    <h1>Login to Your Account</h1><br>
+				                          <form>
+                          					<input type="text" name="user" placeholder="Username">
+                          					<input type="password" name="pass" placeholder="Password">
+                          					<input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                          			  </form>
+
+				                          <div class="login-help">
+					                               <a href="#">Register</a> - <a href="#">Forgot Password</a>
+				                          </div>
+				               </div>
+        			     </div>
+        		  </div>
+
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Sign up</a>
             </li>
           </ul>
         </nav>
-        <h3 class="text-muted">Share your ride</h3>
+        <h3 class="text-muted">INFOTRACK</h3>
       </div>
 
       <div class="jumbotron">
-        <h1 class="display-3">Make Your Life different! </h1>
+        <h1 class="display-3">Make Your Life Different! </h1>
         <p class="lead"> Life is better when you share the ride! Here is a place where you can find a different way to live</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Post a lift </a> <a class="btn pull-right btn-lg btn-success" href="#" role="button">Find a lift </a></p>
+        <p><a class="btn btn-lg btn-info" href="#" role="button">Post a lift </a> <a class="btn pull-right btn-lg btn-info" href="#" role="button">Find a lift </a></p>
       </div>
       <h3>Recent posts:</h3>
 
@@ -45,9 +63,9 @@
 
         <div class="col-lg-6">
           <div class="list-group">
-              <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+              <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active list-group-item-info">
                   <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">List group item heading</h5>
+                    <h5 class="mb-1">Ride offered</h5>
                     <small>3 days ago</small>
                   </div>
                 <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
@@ -55,8 +73,8 @@
               </a>
               <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
                   <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">List group item heading</h5>
-                    <small class="text-muted">3 days ago</small>
+                    <h5 class="mb-1">Ride offered</h5>
+                    <small class="text-muted">just now</small>
                   </div>
                   <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
                   <small class="text-muted">Donec id elit non mi porta.</small>
@@ -75,9 +93,9 @@
 
         <div class="col-lg-6">
         <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active list-group-item-info">
             <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">List group item heading</h5>
+              <h5 class="mb-1">Ride offered</h5>
               <small>3 days ago</small>
             </div>
             <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
@@ -85,7 +103,7 @@
           </a>
           <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">List group item heading</h5>
+              <h5 class="mb-1">Ride wanted</h5>
               <small class="text-muted">3 days ago</small>
             </div>
             <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
