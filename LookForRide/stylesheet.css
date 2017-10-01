@@ -1,7 +1,163 @@
-
-.btn-space{
-  margin-right: 100%;
+.btn-lg
+{
+  margin-left: 30px;
+  margin-right: 30px;
 }
+
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #333;
+  border: .05rem solid #fff;
+}
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #ff9900;
+}
+body {
+  color: #000;
+  text-align: center;
+  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 2rem;
+}
+
+
+/*
+ * Header
+ */
+
+.masthead {
+  background-color: #333;
+  margin-bottom: 4rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+  color: #ff9900;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: bold;
+  color: #ff9900;
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255,255,255,.25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 3rem;
+}
+
+.nav-masthead .active {
+  color:  #ff9900;;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 40em) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 62em) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 60rem;
+  }
+}
+
+
+.list-group-item-secondary,
+.list-group-item-secondary:hover,
+.list-group-item-secondary:focus {
+  background-color: #333;
+  border: .05rem solid #fff;
+}
+
+
 .loginmodal-container {
   padding: 30px;
   max-width: 350px;
@@ -11,6 +167,7 @@
   border-radius: 2px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
   overflow: hidden;
+
   font-family: roboto;
 }
 
@@ -67,7 +224,7 @@
   border: 0px;
   color: #fff;
   text-shadow: 0 1px rgba(0,0,0,0.1);
-  background-color: #4d90fe;
+  background-color: #333;
   padding: 17px 0px;
   font-family: roboto;
   font-size: 14px;
@@ -78,7 +235,7 @@
   /* border: 1px solid #2f5bb7; */
   border: 0px;
   text-shadow: 0 1px rgba(0,0,0,0.3);
-  background-color: #357ae8;
+  background-color: #cc9900;
   /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
 }
 
@@ -94,4 +251,5 @@
 
 .login-help{
   font-size: 12px;
+  text-shadow: none;
 }
