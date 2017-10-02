@@ -1,1 +1,81 @@
+/*
+ * Globals
+ */
 
+/* Links */
+a, a:focus, a:hover {
+	color: #fff;
+}
+/* Custom default button */
+.btn-secondary, .btn-secondary:hover, .btn-secondary:focus {
+	color: #333;
+	text-shadow: none; /* Prevent inheritance from `body` */
+	background-color: #fff;
+	border: .05rem solid #fff;
+}
+/*
+ * Base structure
+ */
+
+html, body {
+	height: 100%;
+	background-color: rgba(230,180,80,1.00)
+}
+body {
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+
+
+.inner {
+	word-spacing: 20px;
+	letter-spacing: 1px;
+	position: fixed;
+	padding: 3rem;
+	background-color: rgba(217, 116, 43, 1.00);
+	width: 100%;
+	z-index: 100;
+}
+
+.main_header{
+	padding-top: 10%;
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: center;
+	letter-spacing: 1px;
+	padding-bottom: 60px;
+	font-size: 40px;
+}
+
+.information_section{
+	background-color: rgba(227, 230, 195, 1.00);
+	height: 500px;
+}
+
+
+.main_header, .personal_page{
+
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+	display: table;
+	width: 100%;
+	height: 100%; /* For at least Firefox */
+	min-height: 100%;
+	-webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+	box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+	display: table-cell;
+	vertical-align: top;
+}
+
+#empty_space1, #empty_space2{
+	margin: 10px;
+	background-color:rgba(131,175,155,1.00);
+	height: 300px;
+	
+}
