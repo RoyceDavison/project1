@@ -47,7 +47,7 @@ class Comment(models.Model):
     comment_id = models.AutoField(primary_key=True)
     date = models.DateTimeField(auto_now_add=True, blank=True)
     user_id = models.ForeignKey('User', on_delete=models.CASCADE)
-    context = models.CharField(max_length=5000,default='DEFAULT VALUE')
+    context = models.TextField(default='DEFAULT VALUE',blank = True)
     post_id = models.ForeignKey('Post', default='DEFAULT VALUE')
     
     
@@ -64,7 +64,7 @@ class Post(models.Model):
     post_id = models.AutoField(primary_key=True)
     user_id = models.ForeignKey('User', null =True)
     title = models.CharField(max_length=100,default='DEFAULT VALUE')
-    content = models.CharField(max_length=5000,default='DEFAULT VALUE')    
+    context = models.TextField(default='DEFAULT VALUE',blank = True)
     favorite = models.CharField(max_length=100, null = True ,blank= True)
     
     def get_absolute_url(self):
@@ -172,16 +172,3 @@ class Picture_post(models.Model):
     def __str__(self):
 
         return '%s, %s' % (self.picture_id, self.post_id)
-
-
-    
-
-
-
-
-
-
-
-
-
-###########################
