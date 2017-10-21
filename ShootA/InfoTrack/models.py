@@ -6,9 +6,9 @@ class User(models.Model):
     # Fields
     user_id = models.AutoField(primary_key=True)
     userName = models.CharField(max_length=20, help_text="Enter user name: ")
-    email = models.CharField(max_length=20, help_text="Enter e-mail account: ")
+    email = models.EmailField(max_length=254, help_text="Enter e-mail account: ")
     password =models.CharField(max_length=20, help_text="Create a password: ")
-    description = models.CharField(max_length=20, help_text="Briefly introduce yourself: ", blank = True)
+    description = models.TextField(help_text="Briefly introduce yourself: ", blank = True)
     YEAR_IN_SCHOOL_CHOICES = (
         ('FR', 'Freshman'),
         ('SO', 'Sophomore'),
