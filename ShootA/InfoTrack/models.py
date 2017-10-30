@@ -10,17 +10,17 @@ class User(models.Model):
     password =models.CharField(max_length=20, help_text="Create a password: ")
     description = models.TextField(help_text="Briefly introduce yourself: ", blank = True)
     
-    grade = models.CharField(
-        max_length=2,
-        choices=YEAR_IN_SCHOOL_CHOICES,
-        default= 'FR',
-    )
-    
     YEAR_IN_SCHOOL_CHOICES = (
         ('FR', 'Freshman'),
         ('SO', 'Sophomore'),
         ('JR', 'Junior'),
         ('SR', 'Senior'),
+    )
+        
+    grade = models.CharField(
+        max_length=2,
+        choices=YEAR_IN_SCHOOL_CHOICES,
+        default= 'FR',
     )
  
     major = models.CharField(max_length=20, help_text="Major: ", blank = True)
